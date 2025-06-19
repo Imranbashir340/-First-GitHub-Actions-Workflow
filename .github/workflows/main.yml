@@ -1,14 +1,14 @@
-name: workfolw
+name: workflow
 
 on:
   push:
-      branches: [main]
+    branches: [main]
 
 jobs:
-  name: Build & Test PHP App
-  runs-on: ubuntu-latest
+  build:                         # ✅ job ka naam (can be any one-word ID)
+    name: Build & Test PHP App   # ✅ Display name for the job
+    runs-on: ubuntu-latest       # ✅ Where the job runs
 
-  steps:
-    - name: first code test
-      run: echo 'imran first test code'
-     
+    steps:
+      - name: first code test
+        run: echo 'imran first test code'
