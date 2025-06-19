@@ -1,0 +1,14 @@
+name: workfolw
+
+on:
+  push:
+      branches: [main]
+
+jobs:
+  name: Build & Test PHP App
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: first code test
+      run: echo 'imran first test code'
+     
